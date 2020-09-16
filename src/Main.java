@@ -3,7 +3,7 @@ public class Main {
 
 public static void main (String[] arg)
 {
-    System.out.println("задание 1");
+    System.out.println("задание 1"+ '\n');
     Scanner input = new Scanner(System.in);
     Circle a = new Circle();
     a.setName("A");
@@ -18,28 +18,35 @@ public static void main (String[] arg)
     System.out.println("Длинна окружности А = " + a.circLangth());
     System.out.println("Площадь окружности А = " + a.circSquare());
 
-    System.out.println("задание 2");
+    System.out.println("задание 2"+ '\n');
 
     Head h1 = new Head();
     h1.setL(15);
     h1.setHair("Black");
     h1.setEye("Blue");
 
-    Leg l1 = new Leg();
-    l1.setFeetl(50.5);
-    l1.setRazmer(43.2);
-    Leg l2 = new Leg();
-    l2.setRazmer(43.5);
-    l2.setFeetl(50.4);
+    Leg le1 = new Leg();
+    le1.setFeetl(50.5);
+    le1.setRazmer(43);
+    Leg le2 = new Leg();
+    le2.setRazmer(43);
+    le2.setFeetl(50.4);
 
     Hand ha1 = new Hand();
-    ha1.setHandl(44.4);
+    ha1.setHandlength(44.4);
     Hand ha2 = new Hand();
-    ha2.setHandl(44.3);
+    ha2.setHandlength(44.3);
 
     Human John = new Human();
+    John.name = "John";
+    John.h1 =ha1;
+    John.h2 = ha2;
+    John.t = h1;
+    John.l1 =le1;
+    John.l2 = le2;
+
+    System.out.println(John);
+}
 
 }
 
-}
-}

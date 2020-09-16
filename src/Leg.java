@@ -1,7 +1,7 @@
 public class Leg {
 
     double feetl;
-    double razmer;
+    int razmer;
 
     public String toString()
     {
@@ -12,7 +12,7 @@ public class Leg {
     public double getFeetL(){
         return feetl;
     }
-    public double getRazmer() {
+    public int getRazmer() {
         return razmer;
     }
 
@@ -20,7 +20,7 @@ public class Leg {
         this.feetl = feetl;
     }
 
-    public void setRazmer(double razmer) {this.razmer = razmer;}
+    public void setRazmer(int razmer) {this.razmer = razmer;}
 
 
 }

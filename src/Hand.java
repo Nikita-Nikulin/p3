@@ -1,19 +1,19 @@
 public class Hand {
-    double handl;
+    double handlength;
 
 
     public String toString()
     {
-        String s ="Длинна = " + handl + '\n';
+        String s ="Длинна = " + handlength + '\n';
         return s;
     }
 
-    public double getHandl(){
-        return handl;
+    public double getHandlength(){
+        return handlength;
     }
 
-    public void setHandl(double handl){
-        this.handl = handl;
+    public void setHandlength(double handlength){
+        this.handlength = handlength;
     }
 
 }

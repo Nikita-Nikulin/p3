@@ -6,14 +6,11 @@ public class Human {
     Hand h1;
     Hand h2;
 
-    public String toString()
-    {
-        String s ="Длинна головы человека " +t.l + '\n'+"Цвет волос человека "+t.hair+ '\n'+"Цвет глаз человека "+ t.eye+'\n';
-        return  s;
+    public String toString() {
+        String s = "Имя челвека - " + name +'\n'+ "Длинна головы человека = " + t.l + '\n' + "Цвет волос человека - " + t.hair + '\n' + "Цвет глаз человека - " + t.eye + '\n'+
+                "Длинна левой руки = "+ h1.handlength+'\n'+ "Длинна правой руки = "+h2.handlength+'\n' + "Длинна левой ноги = "+ l1.feetl+ '\n'+
+                "Длина правой ноги = " + l2.feetl +'\n'+ "Размер обуви = " + l1.razmer;
+        return s;
     }
 
-
-    Human() {
-        t = new Head();
-    }
 }
